@@ -905,6 +905,19 @@ body.light-mode .icon-sun { display: block; }
   animation: fadeUp 1s var(--ease-luxury) 0.3s forwards;
 }
 
+/* Update the .hero-bg section in your style.css at Line 500-515 */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image:
+    linear-gradient(180deg, rgba(6,6,7,0.55) 0%, rgba(6,6,7,0.75) 55%, rgba(11,11,13,1) 100%),
+    url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1920&q=80'); /* Beautiful High-Res Heritage Palace Image match for Agra */
+  background-size: cover;
+  background-position: center;
+  animation: heroZoom 22s ease-in-out infinite alternate;
+}
+
 .hero-title {
   color: var(--color-ivory);
   margin-bottom: var(--space-md);
